@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <!-- Текст страницы -->
+    <h1 class="mt-5 text-center">Добро пожаловать на главную страницу!</h1>
+    <p class="text-center">
+        Добро пожаловать на сайт о мире рыб!
+
+        Наш сайт посвящён удивительному и разнообразному миру рыб — существам, которые населяют моря, океаны, реки и озёра. Здесь вы сможете узнать много интересного о жизни под водой, об особенностях различных видов рыб и об их важной роли в экосистемах нашей планеты.
+
+        Что вы найдёте на нашем сайте:
+        <ul>
+            <li>Увлекательные статьи о морских и пресноводных обитателях.</li>
+            <li>Фотогалерею с изображениями редких и экзотических видов рыб.</li>
+            <li>Советы по уходу за аквариумными рыбками и их содержанию.</li>
+            <li>Истории о том, как рыбы взаимодействуют с другими обитателями водоёмов.</li>
+        </ul>
+
+        Мир рыб полон загадок!
+        От крошечных гуппи до величественных китовых акул — каждая рыба уникальна. Познакомьтесь с их привычками, повадками и необычными способностями, которые помогают им выживать в самых экстремальных условиях.
+
+        Погрузитесь в мир подводных чудес вместе с нами!
+        Открывайте страницы нашего сайта, чтобы больше узнать о природе, биологии и культуре, связанной с рыбами. Мы верим, что понимание и любовь к подводным обитателям помогут сохранить их для будущих поколений.
+    </p>
+
+    <!-- Карусель -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <!-- Индикаторы (точки) -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Слайды -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/static/image/5.jpeg" class="d-block w-100" alt="Слайд 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Первый слайд</h5>
+                    <p>Описание первого слайда.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/static/image/7.jpg" class="d-block w-100" alt="Слайд 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Второй слайд</h5>
+                    <p>Описание второго слайда.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/static/image/10.jpg" class="d-block w-100" alt="Слайд 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Третий слайд</h5>
+                    <p>Описание третьего слайда.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Кнопки управления -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+        </button>
+    </div>
+{% endblock %}

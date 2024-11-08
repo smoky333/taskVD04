@@ -1,0 +1,59 @@
+/* Основные стили для сайта */
+
+/* 1. Стили для общего фона */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Фон всего сайта */
+}
+
+/* 2. Стили для навигации */
+header {
+    background-color: #9ACD32; /* Тёмный фон для шапки */
+    padding: 10px 0;
+    text-align: center;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+/* 3. Стили для основного контента */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+/* 4. Стили для подвала */
+footer {
+    background-color: #4682B4;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
